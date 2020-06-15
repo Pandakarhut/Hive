@@ -1,0 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jtian <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/15 19:25:27 by jtian             #+#    #+#             */
+/*   Updated: 2020/06/15 19:40:00 by jtian            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
+** The memcmp() function compares byte string s1 against byte string s2. Both
+** strings are assumed to be n bytes long. Returns 0 if the first two strings
+** are identical, otherwise returns the difference between the first two bytes
+** (treated as unsigned char values). Zero-length strings are always identical.
+*/
+
+int		ft_memcmp(const void *s1, const void *s2, size_t n)
+{
+	
+}
