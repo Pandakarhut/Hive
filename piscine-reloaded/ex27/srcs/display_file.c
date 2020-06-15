@@ -6,7 +6,7 @@
 /*   By: jtian <jtian@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/04 16:32:38 by jtian             #+#    #+#             */
-/*   Updated: 2020/06/04 18:20:59 by jtian            ###   ########.fr       */
+/*   Updated: 2020/06/04 19:06:03 by jtian            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	display(char *filename)
 		return ;
 	while (read(file, &character, 1))
 		write(1, &character, 1);
-	cloese(file);
+	close(file);
 }
 
 int		main(int argc, char **argv)
