@@ -1,27 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jtian <jtian@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/22 15:00:17 by jtian             #+#    #+#             */
-/*   Updated: 2020/06/26 18:17:57 by jtian            ###   ########.fr       */
+/*   Created: 2020/06/26 20:24:50 by jtian             #+#    #+#             */
+/*   Updated: 2020/06/26 20:57:25 by jtian            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** The strchr() function locates the first occurrence of c (converted to a char)
-** in the string pointed to by s.The terminating null character is considered
-** to be part of the string; therefore if c is `\0', the functions locate
-** the terminating `\0'.
+** The ft_isalpha() function tests for any character for which isupper(3) or
+** islower(3) is true.  The value of the argument must be representable as an
+** unsigned char or the value of EOF.
 */
 
-char    *ft_strchr(const char *s, int c)
+int		ft_isalpha(int c)
 {
-    while ((*s) && (*s) != c)
-        s++;
-    if ((*s) == c)
-        return ((char*)s);
-    return (NULL);
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	{
+		return (1);
+	}
+	return (0);
 }

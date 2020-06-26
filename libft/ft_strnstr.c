@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jtian <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: jtian <jtian@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 16:36:42 by jtian             #+#    #+#             */
-/*   Updated: 2020/06/22 16:36:45 by jtian            ###   ########.fr       */
+/*   Updated: 2020/06/26 18:28:24 by jtian            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@
 ** occurs nowhere in haystack, NULL is returned; otherwise a pointer to the
 ** first character of the first occurrence of needle is returned.
 */
-
-https://github.com/pandark/libft/blob/master/ft_strnstr.c
 
 char    *ft_strnstr(const char *s1, const char *s2, size_t len)
 {
