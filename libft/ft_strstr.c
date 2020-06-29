@@ -3,34 +3,31 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jtian <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: jtian <jtian@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 16:25:39 by jtian             #+#    #+#             */
-/*   Updated: 2020/06/22 16:25:44 by jtian            ###   ########.fr       */
+/*   Updated: 2020/06/29 18:36:06 by jtian            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* 
-** The strstr() function locates the first occurrence of the null-terminated 
-** string needle in the null-terminated string haystack.
-*/
+#include "libft.h"
 
-char    *ft_strstr(const char *s1, const char *s2)
+char	*ft_strstr(const char *s1, const char *s2)
 {
-    int i;
+	int i;
 
-    i = 0;
-    while (*(s2 + i) != *(s1 + i))
-    {
-        if (*(s2 + i) != *(s1 + i))
-        {
-            s1++;
-            i = 0;
-        }
-        else
-            i++;
-    }
-    if (*(s2 + i) == '\0')
-        return (s1);
-    return (0);
+	i = 0;
+	while (*(s2 + i) != *(s1 + i))
+	{
+		if (*(s2 + i) != *(s1 + i))
+		{
+			s1++;
+			i = 0;
+		}
+		else
+			i++;
+	}
+	if (*(s2 + i) == '\0')
+		return (s1);
+	return (0);
 }

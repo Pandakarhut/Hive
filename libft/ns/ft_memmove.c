@@ -1,30 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jtian <jtian@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/15 19:59:18 by jtian             #+#    #+#             */
-/*   Updated: 2020/06/29 18:31:11 by jtian            ###   ########.fr       */
+/*   Created: 2020/06/29 18:27:12 by jtian             #+#    #+#             */
+/*   Updated: 2020/06/29 18:27:16 by jtian            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** The ft_strcpy() function copies the string src to dst (including
-** the terminating `\0' character.)
-*/
+include "libft.h"
 
-#include "libft.h"
-
-char	*ft_strcpy(char *dst, const char *src)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	while (*src)
-	{
-		*dst = *src;
-		dst++;
-		src++;
-	}
-	dst = '\0';
-	return (dst);
+	
 }

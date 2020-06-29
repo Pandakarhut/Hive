@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jtian <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: jtian <jtian@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/17 17:49:37 by jtian             #+#    #+#             */
-/*   Updated: 2020/06/17 18:05:11 by jtian            ###   ########.fr       */
+/*   Updated: 2020/06/29 18:27:47 by jtian            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 ** the end of the null-terminated string s1, then add a terminating '\0'.
 ** The string s1 must have sufficient space to hold the result.
 */
+
+#include "libft.h"
 
 char	*ft_strcat(char *s1, const char *s2)
 {

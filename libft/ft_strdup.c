@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jtian <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: jtian <jtian@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/15 19:45:43 by jtian             #+#    #+#             */
-/*   Updated: 2020/06/15 19:59:05 by jtian            ###   ########.fr       */
+/*   Updated: 2020/06/29 18:31:28 by jtian            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,18 +17,20 @@
 ** available, NULL is returned and errno is set to ENOMEM.
 */
 
+#include "libft.h"
+
 char	*ft_strdup(const char *s1)
 {
 	char	*dup;
 	int		i;
 
 	i = 0;
-	while(s1[i])
+	while (s1[i])
 		i++;
 	if (!(dup = (char*)malloc(sizeof(char) * (i + 1))))
 		return (NULL);
 	i = 0;
-	while (si[i])
+	while (s1[i])
 	{
 		dup[i] = s1[i];
 		i++;

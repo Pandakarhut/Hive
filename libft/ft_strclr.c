@@ -1,30 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strclr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jtian <jtian@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/15 19:59:18 by jtian             #+#    #+#             */
-/*   Updated: 2020/06/29 18:31:11 by jtian            ###   ########.fr       */
+/*   Created: 2020/06/29 18:54:36 by jtian             #+#    #+#             */
+/*   Updated: 2020/06/29 18:56:22 by jtian            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** The ft_strcpy() function copies the string src to dst (including
-** the terminating `\0' character.)
-*/
-
 #include "libft.h"
 
-char	*ft_strcpy(char *dst, const char *src)
+void	ft_strclr(char *s)
 {
-	while (*src)
-	{
-		*dst = *src;
-		dst++;
-		src++;
-	}
-	dst = '\0';
-	return (dst);
+	if (s)
+		*s++ = '\0';
 }

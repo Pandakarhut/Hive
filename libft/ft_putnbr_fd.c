@@ -1,30 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jtian <jtian@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/15 19:59:18 by jtian             #+#    #+#             */
-/*   Updated: 2020/06/29 18:31:11 by jtian            ###   ########.fr       */
+/*   Created: 2020/06/29 21:31:12 by jtian             #+#    #+#             */
+/*   Updated: 2020/06/29 21:35:35 by jtian            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** The ft_strcpy() function copies the string src to dst (including
-** the terminating `\0' character.)
-*/
-
 #include "libft.h"
 
-char	*ft_strcpy(char *dst, const char *src)
+void	ft_putnbr_fd(int n, int fd)
 {
-	while (*src)
+	if (n < -9 || n > 9)
+		ft_putnbr_fd(n / 10, fd);
+	if (n < 0)
 	{
-		*dst = *src;
-		dst++;
-		src++;
+		if (n >= -9)
+			ft_putchar_fd('-', fd);
+		ft_putchar_fd('0' - (n % 10), fd);
 	}
-	dst = '\0';
-	return (dst);
+	else
+		ft_putchar_fd('0' + (n % 10), fd);
 }

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jtian <jtian@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/22 15:00:17 by jtian             #+#    #+#             */
-/*   Updated: 2020/06/26 18:17:57 by jtian            ###   ########.fr       */
+/*   Created: 2020/06/29 18:30:38 by jtian             #+#    #+#             */
+/*   Updated: 2020/06/29 18:30:41 by jtian            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,13 @@
 ** the terminating `\0'.
 */
 
-char    *ft_strchr(const char *s, int c)
+#include "libft.h"
+
+char	*ft_strchr(const char *s, int c)
 {
-    while ((*s) && (*s) != c)
-        s++;
-    if ((*s) == c)
-        return ((char*)s);
-    return (NULL);
+	while ((*s) && (*s) != c)
+		s++;
+	if ((*s) == c)
+		return ((char*)s);
+	return (NULL);
 }

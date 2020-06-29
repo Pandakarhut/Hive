@@ -6,7 +6,7 @@
 /*   By: jtian <jtian@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 15:19:19 by jtian             #+#    #+#             */
-/*   Updated: 2020/06/26 18:25:28 by jtian            ###   ########.fr       */
+/*   Updated: 2020/06/29 18:34:48 by jtian            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,12 @@
 ** or NULL if the character does not appear in the string.
 */
 
+#include "libft.h"
+
 char	*ft_strrchr(const char *s, int c)
 {
 	int i;
-	
+
 	i = ft_strlen((char*)s);
 	while (i > 0 && s[i] != c)
 		i--;

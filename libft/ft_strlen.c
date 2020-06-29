@@ -6,9 +6,11 @@
 /*   By: jtian <jtian@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/15 19:40:26 by jtian             #+#    #+#             */
-/*   Updated: 2020/06/26 18:26:36 by jtian            ###   ########.fr       */
+/*   Updated: 2020/06/29 18:32:26 by jtian            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {

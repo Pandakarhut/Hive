@@ -6,7 +6,7 @@
 /*   By: jtian <jtian@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/26 18:29:43 by jtian             #+#    #+#             */
-/*   Updated: 2020/06/26 19:42:24 by jtian            ###   ########.fr       */
+/*   Updated: 2020/06/29 18:32:40 by jtian            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@
 ** string s2. Compares not more than n characters. The comparison is done
 ** using unsigned characters, so that '\200' is greater than '\0'.
 */
+
+#include "libft.h"
 
 int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {

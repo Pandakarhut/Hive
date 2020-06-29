@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jtian <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: jtian <jtian@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/17 18:37:46 by jtian             #+#    #+#             */
-/*   Updated: 2020/06/17 19:14:33 by jtian            ###   ########.fr       */
+/*   Updated: 2020/06/29 18:32:05 by jtian            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,16 +19,18 @@
 ** to create.
 */
 
+#include "libft.h"
+
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-    size_t len_dst;
-    size_t len_src;
+	size_t len_dst;
+	size_t len_src;
 
-    len_dst = ft_strlen(dst);
-    len_src = ft_strlen(src);
-    if (dstsize <= len_dst)
-        return (len_src + dstsize);
-    else
-        ft_strncat(dst, (char*)src, dstsize - len_dst - 1);
-    return (len_dst + len_src);   
+	len_dst = ft_strlen(dst);
+	len_src = ft_strlen(src);
+	if (dstsize <= len_dst)
+		return (len_src + dstsize);
+	else
+		ft_strncat(dst, (char*)src, dstsize - len_dst - 1);
+	return (len_dst + len_src);
 }

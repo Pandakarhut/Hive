@@ -6,7 +6,7 @@
 /*   By: jtian <jtian@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/17 17:26:45 by jtian             #+#    #+#             */
-/*   Updated: 2020/06/22 17:30:36 by jtian            ###   ########.fr       */
+/*   Updated: 2020/06/29 18:32:57 by jtian            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 ** If src is less than len characters long, the remainder of dst is filled
 ** with `\0' characters.
 */
+
+#include "libft.h"
 
 char	*ft_strncpy(char *dst, const char *src, size_t len)
 {
