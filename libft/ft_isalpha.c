@@ -6,7 +6,7 @@
 /*   By: jtian <jtian@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/26 20:24:50 by jtian             #+#    #+#             */
-/*   Updated: 2020/06/26 20:57:25 by jtian            ###   ########.fr       */
+/*   Updated: 2020/06/29 18:25:34 by jtian            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 ** islower(3) is true.  The value of the argument must be representable as an
 ** unsigned char or the value of EOF.
 */
+
+#include "libft.h"
 
 int		ft_isalpha(int c)
 {

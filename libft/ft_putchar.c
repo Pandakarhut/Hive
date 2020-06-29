@@ -1,23 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memalloc.c                                      :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jtian <jtian@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/27 13:59:25 by jtian             #+#    #+#             */
-/*   Updated: 2020/06/29 18:26:03 by jtian            ###   ########.fr       */
+/*   Created: 2020/06/29 21:04:33 by jtian             #+#    #+#             */
+/*   Updated: 2020/06/29 21:33:28 by jtian            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memalloc(size_t size)
+void	ft_putchar(char c)
 {
-	void *new;
-
-	new = malloc(size);
-	if (new)
-		ft_bzero(new, size);
-	return (new);
+	write(1, &c, 1);
 }

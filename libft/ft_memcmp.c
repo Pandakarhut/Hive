@@ -6,7 +6,7 @@
 /*   By: jtian <jtian@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/15 19:25:27 by jtian             #+#    #+#             */
-/*   Updated: 2020/06/26 17:53:07 by jtian            ###   ########.fr       */
+/*   Updated: 2020/06/29 18:54:07 by jtian            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,22 @@
 ** (treated as unsigned char values). Zero-length strings are always identical.
 */
 
+#include "libft.h"
+
 int		ft_memcmp(const void *s1, const void *s2, size_t n)
 {
+	size_t i;
+	unsigned char *s1_b;
+	unsigned char *s2_b;
+
+	i = 0;
+	s1_b = (unsigned char*)s1;
+	s2_b = (unsigned char*)s2;
 	while (n--)
-    {
-        if (*(unsigned char*)s1) != ((unsigned char*)s2))
-            return (*(unsigned char*)s1) - *((unsigned char*)s2));
-            s1++;
-            s2++;
-    }
-    return (0);
+	{
+		if (s1_b[i] != s2_b[i])
+			return (s1_b[i] - s2_b[i]);
+		i++;
+	}
+	return (0);
 }
